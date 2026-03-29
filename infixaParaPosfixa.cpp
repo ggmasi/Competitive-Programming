@@ -14,17 +14,19 @@ int main(){
                 pilha.push(s[i]);
             }else if(s[i] == ')'){
                 char temp = pilha.top();
-                pilha.pop();
                 while(temp != '('){
+                    pilha.pop();
                     cout << temp;
+                    temp = pilha.top();
                 }
+                pilha.pop();
             }else if(s[i] == '^'){
                 pilha.push(s[i]);
             }else if(s[i] == '*' || s[i] == '/'){
-                if(pilha.top() == '+' || pilha.top() == '-' || pilha.top() == '(' || pilha.empty()){
+                if(pilha.empty() || pilha.top() == '+' || pilha.top() == '-' || pilha.top() == '('){
                     pilha.push(s[i]);
                 }else{
-                    while(pilha.top() != '+' && pilha.top() != '-' && pilha.top() != '(' && !pilha.empty()){
+                    while(!pilha.empty() && pilha.top() != '+' && pilha.top() != '-' && pilha.top() != '('){
                         char temp = pilha.top();
                         pilha.pop();
                         cout << temp;
@@ -33,10 +35,10 @@ int main(){
                     pilha.push(s[i]);
                 }
             }else if(s[i] == '+' || s[i] == '-'){
-                if(pilha.top() == '(' || pilha.empty()){
+                if(pilha.empty() ||pilha.top() == '('){
                     pilha.push(s[i]);
                 }else{
-                    while(pilha.top() != '(' && !pilha.empty()){
+                    while(!pilha.empty() && pilha.top() != '('){
                         char temp = pilha.top();
                         pilha.pop();
                         cout << temp;
@@ -48,6 +50,10 @@ int main(){
             }
         }
         while(!pilha.empty()){
+            if(pilha.top() == '('){
+                pilha.pop();
+                continue;
+            }
             cout << pilha.top();
             pilha.pop();
         }
