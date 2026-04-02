@@ -1,29 +1,31 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAX = 4000;
 
-int n, m, k;
-vector<vector<int>> dp;
-
-int calc(int a, int b){
-    if(a == 0) return 1;
-    if(a < 0 || b == 0) return 0;
-    if(dp[a][b] != -1) return dp[a][b];
-    long long ans = calc(a, b-1);
-    
-    if(b != k && a >= b){
-        ans += calc(a-b, b);
-    }
-
-    dp[a][b] = ans%998244353;
-
-    return dp[a][b];
-}
 
 int main(){
+    int n, k;
     cin >> n >> k;
-    dp.assign(n+1, vector<int>(n+1, -1));
     
-    cout << calc(n, n) << endl;
+    vector<vector<int>> dp(n+1, vector<int>(n+1, 1));
+    for (int i = 0; i <=n; i++){
+        dp[0][i] = 0;
+    }
+    
+
+    for (int i = 1; i <= n; i++){
+        for (int j = 1; j <= n; j++){
+            if(i == k || i > j){
+                dp[i][j] = dp[i-1][j];
+            }else{
+                dp[i][j] = (dp[i-1][j] + dp[i][j-i])%998244353;
+            }
+        }
+        
+    }
+
+    
+    int ans = dp[n][n];
+    cout << ans << endl;
+    
 }
