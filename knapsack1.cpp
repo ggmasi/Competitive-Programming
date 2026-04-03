@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+        SOLUÇÃO PARA A MAIORIA DOS KNAPSACKS 0-1
+        SOLUÇÃO PARA BOLSA COM LIMITE DE PESO BAIXO E VALOR MAXIMO ALTO (W -> valor baixo; sum de valores -> valor alto) 
+
+
+*/
+
+
+
 int main(){
     long long int n, w; cin >> n >> w;
     vector<long long int> pesos(n);
