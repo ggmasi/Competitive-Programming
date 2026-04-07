@@ -2,12 +2,31 @@
 using namespace std;
 
 int main(){
-    vector<int> v = {1, 2, 3, 4, 5};
+    vector<long long int> v;
 
-    // Remove the element at index 2
-    v.erase(v.begin() + 2);
+    v.push_back(1);
+    v.push_back(1);
 
-    for (auto i : v)
-        cout << i << " ";
-    return 0;
+    // long long int t; cin >> t;
+    long long int mod = 1e9+7;
+    // while(t--){
+        long long int n; cin >> n;
+
+        if(v.size() >= n+1){
+            cout << v[n-1] << "\n";
+            // continue;
+        }
+
+        while(v.size() < n+1){
+            v.push_back((v[v.size()-2]+v[v.size()-1]));
+        }
+        
+        cout << v.back() << "\n";
+        
+    // }
+
+    
+    
+
+    
 }
