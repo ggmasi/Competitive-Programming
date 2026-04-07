@@ -1,30 +1,22 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+
 int main(){
-    vector<long long int> v;
+    int n, k; cin >> n >> k;
 
-    v.push_back(1);
-    v.push_back(1);
+    vector<int> h(n);
+    h[0] = 0;
 
-    // long long int t; cin >> t;
-    long long int mod = 1e9+7;
-    // while(t--){
-        long long int n; cin >> n;
-
-        if(v.size() >= n+1){
-            cout << v[n-1] << "\n";
-            // continue;
-        }
-
-        while(v.size() < n+1){
-            v.push_back((v[v.size()-2]+v[v.size()-1]));
+    for (int i = 1; i < n; i++){
+        for (int j = i; j > 0; j++)
+        {
+            /* code */
         }
         
-        cout << v.back() << "\n";
-        
-    // }
-
+    }
+    
     
     
 
