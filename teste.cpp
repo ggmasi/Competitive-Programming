@@ -2,12 +2,20 @@
 using namespace std;
 
 int main(){
-    vector<int> v = {1, 2, 3, 4, 5};
+    int n; cin >> n;
+    int l1 = 0, l2 = 0;
 
-    // Remove the element at index 2
-    v.erase(v.begin() + 2);
+    for (int i = 0; i < n; i++){
+        int temp; cin >> temp;
+        if(temp == 1){
+            l1 = !l1;
+        }else{
+            l1 = !l1;
+            l2 = !l2;
+        }
+    }
+    
+    cout << l1 << "\n" << l2 << "\n";
 
-    for (auto i : v)
-        cout << i << " ";
     return 0;
 }
