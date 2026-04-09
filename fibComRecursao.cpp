@@ -8,6 +8,7 @@ long long int fib(long long int x){
     if(x <= 2) return 1;
     if(memo[x] != -1) return memo[x];
     return memo[x] = fib(x-1)+fib(x-2);
+    return fib(x-1)+fib(x-2);
 }
 
 int main(){
