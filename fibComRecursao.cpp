@@ -1,16 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> memo(200200, -1);
+vector<long long int> memo(200200, -1);
 
-int fib(int x){
+long long int fib(long long int x){
+    if(x == 0) return 0;
     if(x <= 2) return 1;
     if(memo[x] != -1) return memo[x];
     return memo[x] = fib(x-1)+fib(x-2);
 }
 
 int main(){
-    int n; cin >> n;
-    cout << fib(n) << endl;
+    long long int n; cin >> n;
+    while(n--){
+        long long int t; cin >> t;
+        cout << "Fib(" << t << ") = " <<  fib(t) << endl;
+        
+    }
     return 0;
 }
