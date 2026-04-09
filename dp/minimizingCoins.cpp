@@ -15,7 +15,6 @@ int main(){
         cin >> valores[i];
     }
     
-
     for (int i = 0; i < n; i++){
         for (int j = valores[i]; j <= x; j++){
             dp[j] = min(dp[j], 1+dp[j-valores[i]]);
