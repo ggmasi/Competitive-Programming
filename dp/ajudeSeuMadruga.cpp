@@ -13,32 +13,48 @@ int main(){
         }
         
         sort(valores.rbegin(), valores.rend());
-
-        vector<int> dp(valores[0]);
-        dp[0] = 1;
-
-
+        vector<double> dp(valores[0]);
         int cnt = 1;
+        dp[0] = 1;
+        for (int i = 1; i < n; i++){
+            if(valores[i-1] == valores[i]){
+                dp[0]++;
+                cnt++;
+            }else break;
+        }
+        
+        cout << cnt << endl;
+
+
         bool b = false;
         int i;
 
         if(dp[0] > a){
-            cout << dp[0]-a << endl;
+            cout << setprecision(4) << (double)(dp[0]-a)/cnt << endl;
         }else if(dp[0] == a){
-            cout << dp[0] << endl;
+            cout << setprecision(4) << dp[0] << endl;
         }else{
             for (i = 1; i < valores[0]; i++){
                 dp[i] = dp[i-1]+cnt;
-                
+                // cout << dp[i] << endl;
                 if(valores[0]-1-i < valores[cnt]){
                     dp[i]++;
                     cnt++;
+                    for (int j = cnt; j < n; j++){
+                        if(valores[j] == valores[j-1]){
+                            dp[i] += cnt;
+                            cnt++;
+                        }else break;
+                    }
+                    
                 }
 
                 if(dp[i] >= a) b = true; break;
             }
 
         }
+
+        cout << b << endl;
 
         for (int i = 0; i < valores[0]; i++){
             cout << dp[i] << " ";
