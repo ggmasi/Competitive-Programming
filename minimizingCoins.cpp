@@ -1,43 +1,28 @@
+//https://cses.fi/problemset/task/1634
+
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAX = 1e6+5;
-const int INF = INT32_MAX;
-
-vector<int> coins;
-int dp[MAX];
-
-int calc(int a){
-    if(a <= 0) return 0;
-    if(dp[a] != -1) return dp[a];
-    dp[a] = INF;
-    for (auto c : coins){
-        if(c <= a){
-            int temp = calc(a-c);
-            if(temp != INF){
-                dp[a] = min(dp[a], temp+1);
-            }
-        } 
-    }
-    return dp[a];
-}
+int INF = 1e6+7;
 
 int main(){
-    memset(dp, -1, sizeof(dp));
-    int n, sum;
-    cin >> n >> sum;
+    int n, x; cin >> n >> x;
+    vector<int> valores(n);
+    vector<int> dp(x+1, INF);
+    dp[0] = 0;
+
     for (int i = 0; i < n; i++){
-        int x;
-        cin >> x;
-        coins.push_back(x);
+        cin >> valores[i];
     }
     
-    int ans = calc(sum);
-
-    if(ans == INF || ans == -1){
-        cout << -1 << endl;
-        return 0;
+    for (int i = 0; i < n; i++){
+        for (int j = valores[i]; j <= x; j++){
+            dp[j] = min(dp[j], 1+dp[j-valores[i]]);
+        }
+        
     }
-    cout << ans << endl;
+    
+    if(dp[x] != INF) cout << dp[x] << endl;
+    else cout << -1 << endl;
     return 0;
 }

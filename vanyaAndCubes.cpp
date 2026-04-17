@@ -1,19 +1,21 @@
+//https://codeforces.com/problemset/problem/492/A
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 int main(){
     int n;
     cin >> n;
-
-    int cnt = 0;
-    int sum = 2;
-    int sub = 1;
-    while(n > 0){
-        n -= sub;
-        cnt++;
-        sub += sum;
-        sum += sum+1;
+    int i = 1, nivel = 0, j = 1, k = 1;
+    while(1){
+        j += k;
+        i += j + nivel+1;
+        k++;
+        nivel++;
+        if(n < i){
+            break;
+        }
     }
-
-    cout << cnt << endl;
+ 
+    cout << nivel << endl;
+    return 0;
 }
