@@ -3,33 +3,21 @@
 using namespace std;
  
 const int MAX = 1e5+5;
- 
+
 int main(){
-    int n;
-    cin >> n;
-    vector<int> p(n);
-    int freq[MAX];
-    int dp[MAX];
-    memset(freq, 0, sizeof(freq));
-    memset(dp, 0, sizeof(dp));
+    int n; cin >> n;
+    vector<int> v(n);
     for (int i = 0; i < n; i++){
-        cin >> p[i];
-        freq[p[i]]++;
+        cin >> v[i];
     }
-    dp[0] = 0;
-    for (int i = 1; i <= 1e5; i++){
-        dp[i] = dp[i-1]+freq[i];
+    sort(v.begin(), v.end());
+    
+    int q; cin >> q;
+    for (int i = 0; i < q; i++){
+        int temp;cin >> temp;
+        int ans = upper_bound(v.begin(), v.end(), temp) - v.begin();
+        
+        cout << ans << endl;
     }
     
-    int q;
-    cin >> q;
-    for (int i = 0; i < q; i++){
-        int temp;
-        cin >> temp;
-        if(temp > 1e5){
-            cout << n << endl;
-        }else cout << dp[temp] << endl;
-        
-    }
-    return 0;
 }
