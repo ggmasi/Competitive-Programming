@@ -1,6 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+    Árvore binária capaz de armazenar informações de intervalos de um array. O(log n) tanto para encontrar valores quanto para atualizar.
+    A árvore estruturada abaixo armazena as somas nos intervalos o array arr.
+    A partir dessa base, é possível adaptar a árvore para diversos modelos, como: subtração em um intervalo, maior/menor número num intervalo, 
+*/
+
+
+
 const int MAXN = 2e5 + 5;
 int arr[MAXN];
 int tree[4*MAXN];
@@ -41,6 +49,8 @@ int query(int no, int start, int end, int l, int r){
     return query(no*2, start, mid, l, min(r, mid)) + query(no*2+1, mid+1, end, max(l, mid+1), r);
 }
 
+
+//exemplo
 int main(){
     int n = 6;
     arr[0] = 1;

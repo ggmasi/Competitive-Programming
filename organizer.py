@@ -9,6 +9,7 @@ judges = {
     'atcoder': 'AtCoder',
     'leetcode': 'LeetCode',
     'vjudge': 'VJudge',
+    'cses': 'CSES',
     'sql': 'Exercicios_SQL'
 }
 
