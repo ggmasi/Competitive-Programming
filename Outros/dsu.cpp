@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*Algoritmo para encontrar menor caminho que conecta todos os vértices de um grafo*/
+
+
 struct DSU {
     int n;
     vector<int> pai;
