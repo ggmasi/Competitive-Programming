@@ -2,88 +2,82 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int INF = 1e9;
+const int INF = 1000000000;
+using pii = pair<int, int>;
+vector<unordered_map<int, int>> adj;
 
-map<int, map<int, int>> grafo;
-map<int, int> custos;
-map<int, int> visitado;
+void dijkstra(int origem, int destino, vector<int>& distancias, vector<int>& predecessores) {
+    int n = adj.size();
+    distancias.assign(n, INF);
+    predecessores.assign(n, -1);
 
-int achar_custo_mais_baixo(map<int, int>& copiaCusto){
-    int menorCusto = INF;
-    int retorno = -1;
-    for (auto const& [c, i] : copiaCusto){
-        if(i < menorCusto && visitado[c] != 1){
-            menorCusto = i;
-            retorno = c;
-        }
-    }
-    return retorno;
-}
+    distancias[origem] = 0;
+    priority_queue<pii, vector<pii>, greater<pii>> fila;
+    fila.push({0, origem});
 
-int busca(int origem, int destino, int n_cidades){
-    visitado.clear();
-    custos.clear();
-    for (int i = 1; i <= n_cidades; i++){
-        custos[i] = INF;
-    }
-    custos[origem] = 0;
-    int n = achar_custo_mais_baixo(custos);
-    while(n != -1){
-        int custo_atual = custos[n];
-        if(destino == n) break;
-        for(auto const& [c, i] : grafo[n]){
-            if(custos[c] > custo_atual + i){
-                custos[c] = custo_atual + i;
+    while (!fila.empty()) {
+        int atual = fila.top().second;
+        int distAtual = fila.top().first;
+        fila.pop();
+
+        if(atual == destino) return;
+
+        if (distAtual != distancias[atual])
+            continue;
+
+        for (auto edge : adj[atual]) {
+            int v = edge.first;
+            int len = edge.second;
+
+            if (distancias[atual] + len < distancias[v]) {
+                distancias[v] = distancias[atual] + len;
+                predecessores[v] = atual;
+                fila.push({distancias[v], v});
             }
         }
-        visitado[n] = 1;
-        n = achar_custo_mais_baixo(custos);
-    }
 
-    return custos[destino];
+
+    }
 }
 
 int main(){
+    while(1){
+        int n, e; cin >> n >> e;
 
-    while (1){
-        int nc, t; cin >> nc >> t;
-        grafo.clear();
-        if(nc == 0 && t == 0){
-            return 0;
-        }
-
-        for (int i = 0; i < t; i++){
-            int origem, destino; 
-            int custo;
-            cin >> origem >> destino >> custo;
-
-            if(grafo.count(destino) && grafo[destino].count(origem)){
-                grafo[origem][destino] = 0;
-                grafo[destino][origem] = 0;
-
+        if(n == 0 && e == 0) return 0;
+        
+        adj.assign(n, unordered_map<int, int>());
+    
+        for (int i = 0; i < e; i++){
+            int u, v, w; cin >> u >> v >> w;
+            u--;
+            v--;
+            if(adj[v].count(u)){
+                adj[v][u] = 0;
+                adj[u][v] = 0;
             }else{
-                grafo[origem][destino] = custo;
+                adj[u][v] = w;
             }
-
+    
         }
         
-        int n; cin >> n;
-        for (int i = 0; i < n; i++){
-            int o, d; cin >> o >> d;
-            int res = busca(o, d, nc);
-            if(res >= INF){
-                cout << "Nao e possivel entregar a carta" << endl;
-            }else cout << res << endl;
+        vector<int> distancias, predecessores;
+        int k; cin >> k;
+        for (int i = 0; i < k; i++){
+            int u, v; cin >> u >> v;
+            u--;
+            v--;
+            dijkstra(u, v, distancias, predecessores);
+            if(distancias[v] == INF){
+                cout << "Nao e possivel entregar a carta\n";
+            }else{
+                cout << distancias[v] << endl;
+            }
         }
-        cout << endl;
+        
+
     }
-    
-    
-    
-
-    
 
 
-    return 0;
 
 }

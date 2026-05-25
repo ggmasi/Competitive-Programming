@@ -14,4 +14,4 @@ for i in range(c-b, c-a+1):
 if(flag):
     print("S")
 else:
-    print("N")
+    print("N")  
