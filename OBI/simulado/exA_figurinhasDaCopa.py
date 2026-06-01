@@ -7,7 +7,7 @@ m = int(m)
 
 cnt = c
 
-carimbadas = [0]*(n+1)
+carimbadas = [0]*(n)
 
 temp = list(map(int, input().split()))
 

@@ -8,9 +8,7 @@ estoque_casa = 0
 estoque_esc = 0
 
 for i in range(n):
-    condicoes = input().split()
-    ida = condicoes[0]
-    volta = condicoes[1]
+    ida, volta = input().split()
 
     if ida == "chuva":
         if estoque_casa > 0:

@@ -16,7 +16,7 @@ for s in palavras:
     
 
     if(s[0] == s[2] and s[1] == s[3]):
-        s = s[:2]+s[4:]
+        s = s[:2]+s[4:] #pega tudo que vem antes do indice 2 e tudo que vem depois do indice 4
     
     print(s, end="")
 
