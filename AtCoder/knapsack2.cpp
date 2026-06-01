@@ -8,31 +8,31 @@ using namespace std;
 
 
 */
+#define ll long long
 
-
-long long int INF = 1e18;
+ll INF = 1e18;
 
 int main(){
-    long long int n, w; cin >> n >> w;
-    vector<long long int> pesos(n);
-    vector<long long int> valores(n);
-    long long int valorMax = 0;
-    for (long long int i = 0; i < n; i++){
+    ll n, w; cin >> n >> w;
+    vector<ll> pesos(n);
+    vector<ll> valores(n);
+    ll valorMax = 0;
+    for (ll i = 0; i < n; i++){
         cin >> pesos[i] >> valores[i];
         valorMax += valores[i];
     }
     
-    vector<long long int> dp(valorMax+1, INF);
+    vector<ll> dp(valorMax+1, INF);
     dp[0] = 0;
 
-    for (long long int i = 0; i < n; i++){
-        for (long long int j = valorMax; j >= valores[i]; j--){
+    for (ll i = 0; i < n; i++){
+        for (ll j = valorMax; j >= valores[i]; j--){
             dp[j] = min(dp[j], dp[j-valores[i]]+pesos[i]);
         }
     }
     
-    long long int res = 0;
-    for (long long int i = valorMax; i >= 0; i--){
+    ll res = 0;
+    for (ll i = valorMax; i >= 0; i--){
         if(dp[i] <= w){
             res = i;
             break;
