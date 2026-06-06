@@ -5,20 +5,17 @@ using namespace std;
 int n, m; 
 
 void solve(vector<vector<char>>& matriz, int i, int j){
-    if(matriz[i][j] != 'o') return;
+    matriz[i][j] = 'o';
     
     if(i+1 < n && matriz[i+1][j] == '.'){
-        matriz[i+1][j] = 'o';
         solve(matriz, i+1, j);
     }
 
     if(j+1 < m && i+1 < n && matriz[i][j+1] == '.' && matriz[i+1][j] == '#'){
-        matriz[i][j+1] = 'o';
         solve(matriz, i, j+1);
     }
 
     if(i+1 < n && j-1 >= 0 && matriz[i][j-1] == '.' && matriz[i+1][j] == '#'){
-        matriz[i][j-1] = 'o';
         solve(matriz, i, j-1);
     }
 
