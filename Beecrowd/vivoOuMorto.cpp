@@ -15,13 +15,14 @@ int main(){
         for (int i = 0; i < r; i++){
             int n; cin >> n;
             int k; cin >> k;
-            for (int j = 0; j < p; j++){
-                if(posicoes[j] == -1) continue;
+            vector<int> filaAtual;
+            for (int j = 0; j < posicoes.size(); j++){
                 int temp; cin >> temp;
-                if(temp != k){
-                    posicoes[j] = -1;
+                if(temp == k){
+                    filaAtual.push_back(posicoes[j]);
                 }
             }
+            posicoes = filaAtual;
         }
         int ganhador;
         for (int i = 0; i < p; i++){
