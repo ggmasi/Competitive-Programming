@@ -5,37 +5,23 @@ using namespace std;
 
 
 struct DSU {
-    int n;
-    vector<int> pai;
-    vector<int> rank;
-
-    DSU(int N) {
-        n = N;
-        pai.resize(N);
-        iota(pai.begin(), pai.end(), 0);
-        rank.assign(N, 0);
+    vector<int> parent, size;
+    DSU(int n) : parent(n), size(n, 1) {
+        iota(parent.begin(), parent.end(), 0);
+    }
+    
+    int find(int v) {
+        if (v == parent[v]) return v;
+        return parent[v] = find(parent[v]);
     }
 
-    int find(int x) {
-        if (pai[x] == x)
-            return x;
-        return pai[x] = find(pai[x]);
-    }
-
-    void join(int a, int b) {
-        a = find(a);
-        b = find(b);
-
-        if (a == b)
-            return;
-
-        if (rank[a] > rank[b]) {
-            swap(a, b);
-        }
-        
-        pai[a] = b;
-
-        rank[b] += (rank[a] == rank[b]);
+    bool unite(int a, int b) {
+        a = find(a); b = find(b);
+        if (a == b) return false;
+        if (size[a] < size[b]) swap(a, b);
+        parent[b] = a;
+        size[a] += size[b];
+        return true;
     }
 };
 
@@ -61,23 +47,23 @@ int main() {
     for (int i = 0; i < m; i++) {
         int a, b, c;
         cin >> a >> b >> c;
-        arestas.push_back(Edge(a-1, b-1, c));
+        arestas.push_back(Edge(a, b, c));
     }
 
     sort(arestas.begin(), arestas.end());
 
-    DSU dsu(n);
+    DSU dsu(n); //Folga de segurança para grafos indexados em 1
     int cnt = 0;
     vector<Edge> MST;
     for (auto u : arestas) {
         if (dsu.find(u.x) != dsu.find(u.y)) {
             MST.push_back(u);
-            dsu.join(u.x, u.y);
+            dsu.unite(u.x, u.y);
             cnt += u.w;
         }
     }
 
 
-    cout << cnt << endl;
+    
     return 0;
 }
