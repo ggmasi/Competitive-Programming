@@ -27,13 +27,11 @@ struct DSU {
 
 struct Edge {
     int x, y, w;
-
     Edge(int X = 0, int Y = 0, int W = 0){
         x = X;
         y = Y;
         w = W;
     }
-
     bool operator<(const Edge& outra) const {
         return this->w < outra.w;
     }
@@ -63,7 +61,5 @@ int main() {
         }
     }
 
-
-    
     return 0;
 }
