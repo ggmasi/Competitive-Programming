@@ -1,5 +1,7 @@
 import os
 import shutil
+import re
+from pathlib import Path
 
 source_dir = '.' 
 
@@ -12,6 +14,49 @@ judges = {
     'cses': 'CSES',
     'sql': 'Exercicios_SQL'
 }
+
+def renomear_arquivos_codeforces(diretorio):
+    padrao = re.compile(r'codeforces\.com/.*?(\d+)(?:/problem)?/([A-Za-z][A-Za-z0-9]*)', re.IGNORECASE)
+    caminho = Path(diretorio)
+    
+    if not caminho.exists() or not caminho.is_dir():
+        print(f"Erro: O diretório '{diretorio}' não existe.")
+        return
+
+    for arquivo in caminho.iterdir():
+        if not arquivo.is_file() or arquivo.suffix not in ['.cpp', '.c', '.py']:
+            continue
+
+        novo_nome = None # Variável para guardar o nome fora do bloco de leitura
+
+        try:
+            # Abre e lê o arquivo
+            with open(arquivo, 'r', encoding='utf-8') as f:
+                for _ in range(10):
+                    linha = f.readline()
+                    if not linha:
+                        break
+                    
+                    match = padrao.search(linha)
+                    if match:
+                        numero = match.group(1)
+                        letra = match.group(2).upper()
+                        prefixo = f"{numero}{letra}_"
+                        
+                        # Se não tem o prefixo, anota qual deve ser o novo nome
+                        if not arquivo.name.startswith(prefixo):
+                            novo_nome = prefixo + arquivo.name
+                        
+                        break # Encontrou o link, não precisa ler mais as outras linhas
+            
+            # AGORA SIM: Fora do bloco 'with', o arquivo já está fechado e liberado pelo Windows
+            if novo_nome:
+                novo_caminho = arquivo.with_name(novo_nome)
+                arquivo.rename(novo_caminho)
+                print(f"[OK] Renomeado: {arquivo.name} -> {novo_nome}")
+
+        except Exception as e:
+            print(f"[ERRO] Falha ao processar {arquivo.name}: {e}")
 
 def organizar_por_recorte():
     print("Iniciando a organização (Recortar e Colar)...")
@@ -52,5 +97,6 @@ def organizar_por_recorte():
                 print(f"Erro ao processar {filename}: {e}")
 
 if __name__ == "__main__":
-    organizar_por_recorte()
+    # organizar_por_recorte()
+    renomear_arquivos_codeforces("./Codeforces")
     input("\nOrganização concluída! Pressione Enter para fechar...")
