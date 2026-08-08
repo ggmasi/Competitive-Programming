@@ -1,0 +1,16 @@
+//https://codeforces.com/problemset/problem/2210/A
+// A Simple Sequence
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int t; cin >> t;
+    while(t--){
+        int n; cin >> n;
+        for (int i = n; i >= 1; i--){
+            cout << i << " ";
+        }
+        
+        cout << endl;
+    }
+}

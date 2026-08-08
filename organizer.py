@@ -15,48 +15,69 @@ judges = {
     'sql': 'Exercicios_SQL'
 }
 
-def renomear_arquivos_codeforces(diretorio):
-    padrao = re.compile(r'codeforces\.com/.*?(\d+)(?:/problem)?/([A-Za-z][A-Za-z0-9]*)', re.IGNORECASE)
+def formatar_nome_titulo(nome):
+    """
+    Transforma nomes como 'nomeDoExercicio', 'NomeDoExercicio' ou 'nome_do_exercicio'
+    em 'Nome Do Exercicio'.
+    """
+    nome_sem_simbolos = nome.replace('_', ' ').replace('-', ' ')
+    nome_separado = re.sub(r'([a-z])([A-Z])', r'\1 \2', nome_sem_simbolos)
+    return " ".join(nome_separado.split()).title()
+
+def limpar_nomes_e_inserir_titulo(diretorio):
     caminho = Path(diretorio)
     
     if not caminho.exists() or not caminho.is_dir():
         print(f"Erro: O diretório '{diretorio}' não existe.")
         return
 
+    # REGRA ATUALIZADA: Aceita qualquer combinação de letras e números antes do '_'
+    padrao_nome = re.compile(r'^([A-Za-z0-9]+)_(.+)(\.[a-zA-Z0-9]+)$')
+
+    print(f"Iniciando a formatação na pasta: {diretorio}...")
+
     for arquivo in caminho.iterdir():
-        if not arquivo.is_file() or arquivo.suffix not in ['.cpp', '.c', '.py']:
+        if not arquivo.is_file():
             continue
 
-        novo_nome = None # Variável para guardar o nome fora do bloco de leitura
+        match = padrao_nome.match(arquivo.name)
+        if match:
+            codigo_exercicio = match.group(1)   
+            nome_exercicio_bruto = match.group(2) 
+            extensao = match.group(3)           
 
-        try:
-            # Abre e lê o arquivo
-            with open(arquivo, 'r', encoding='utf-8') as f:
-                for _ in range(10):
-                    linha = f.readline()
-                    if not linha:
-                        break
-                    
-                    match = padrao.search(linha)
-                    if match:
-                        numero = match.group(1)
-                        letra = match.group(2).upper()
-                        prefixo = f"{numero}{letra}_"
-                        
-                        # Se não tem o prefixo, anota qual deve ser o novo nome
-                        if not arquivo.name.startswith(prefixo):
-                            novo_nome = prefixo + arquivo.name
-                        
-                        break # Encontrou o link, não precisa ler mais as outras linhas
+            nome_exercicio_formatado = formatar_nome_titulo(nome_exercicio_bruto)
+            novo_nome_arquivo = f"{codigo_exercicio}{extensao}"
             
-            # AGORA SIM: Fora do bloco 'with', o arquivo já está fechado e liberado pelo Windows
-            if novo_nome:
-                novo_caminho = arquivo.with_name(novo_nome)
-                arquivo.rename(novo_caminho)
-                print(f"[OK] Renomeado: {arquivo.name} -> {novo_nome}")
+            if extensao in ['.cpp', '.c', '.java']:
+                linha_comentario = f"// {nome_exercicio_formatado}\n"
+            elif extensao == '.py':
+                linha_comentario = f"# {nome_exercicio_formatado}\n"
+            elif extensao == '.sql':
+                linha_comentario = f"-- {nome_exercicio_formatado}\n"
+            else:
+                linha_comentario = f"// {nome_exercicio_formatado}\n"
 
-        except Exception as e:
-            print(f"[ERRO] Falha ao processar {arquivo.name}: {e}")
+            try:
+                with open(arquivo, 'r', encoding='utf-8') as f:
+                    linhas = f.readlines()
+
+                if len(linhas) > 0:
+                    if len(linhas) < 2 or linha_comentario.strip() not in linhas[1]:
+                        linhas.insert(1, linha_comentario)
+                
+                with open(arquivo, 'w', encoding='utf-8') as f:
+                    f.writelines(linhas)
+
+                novo_caminho = arquivo.with_name(novo_nome_arquivo)
+                arquivo.rename(novo_caminho)
+                
+                print(f"[OK] Alterado: {arquivo.name} -> {novo_nome_arquivo} (Comentário: {nome_exercicio_formatado})")
+
+            except UnicodeDecodeError:
+                print(f"[ERRO] Problema de encoding em {arquivo.name}. Tente mudar para 'latin-1'.")
+            except Exception as e:
+                print(f"[ERRO] Falha ao processar {arquivo.name}: {e}")
 
 def organizar_por_recorte():
     print("Iniciando a organização (Recortar e Colar)...")
@@ -70,7 +91,6 @@ def organizar_por_recorte():
             dest_folder = 'Outros'
             
             try:
-                # O bloco 'with' garante que o arquivo seja FECHADO após a leitura
                 with open(filepath, 'r', encoding='latin-1') as file:
                     first_line = file.readline().lower()
                     for key, folder_name in judges.items():
@@ -78,14 +98,12 @@ def organizar_por_recorte():
                             dest_folder = folder_name
                             break
                 
-                # AGORA o arquivo já está fechado, podemos mover com segurança
                 target_dir = os.path.join(source_dir, dest_folder)
                 if not os.path.exists(target_dir):
                     os.makedirs(target_dir)
                 
                 dest_path = os.path.join(target_dir, filename)
                 
-                # Se o arquivo já existir no destino, removemos para evitar erro de permissão
                 if os.path.exists(dest_path):
                     os.remove(filepath)
                     print(f"Removido duplicata: {filename}")
@@ -97,6 +115,5 @@ def organizar_por_recorte():
                 print(f"Erro ao processar {filename}: {e}")
 
 if __name__ == "__main__":
-    # organizar_por_recorte()
-    renomear_arquivos_codeforces("./Codeforces")
-    input("\nOrganização concluída! Pressione Enter para fechar...")
+    limpar_nomes_e_inserir_titulo("./Codeforces")
+    input("\nOperação concluída! Pressione Enter para fechar...")
