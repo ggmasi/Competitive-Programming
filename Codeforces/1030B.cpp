@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1030/problem/B
-// Vasya And Cornfield
+// url: https://codeforces.com/contest/1030/problem/B
+// Title: Vasya And Cornfield
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/2195/B
-// Heapify1
+// url: https://codeforces.com/problemset/problem/2195/B
+// Title: Heapify1
 #include <bits/stdc++.h>
 using namespace std;
 

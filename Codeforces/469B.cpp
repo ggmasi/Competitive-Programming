@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/469/problem/B
-// Chat Online
+// url: https://codeforces.com/contest/469/problem/B
+// Title: Chat Online
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/550/problem/B
-// Preparing Olympiad
+// url: https://codeforces.com/contest/550/problem/B
+// Title: Preparing Olympiad
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/443/problem/A
-// Anton And Letters
+// url: https://codeforces.com/contest/443/problem/A
+// Title: Anton And Letters
 #include <bits/stdc++.h>
 using namespace std;
 

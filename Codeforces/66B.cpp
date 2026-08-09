@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/66/problem/B
-// Petya And Countryside
+// url: https://codeforces.com/contest/66/problem/B
+// Title: Petya And Countryside
 #include <bits/stdc++.h>
 using namespace std;
 

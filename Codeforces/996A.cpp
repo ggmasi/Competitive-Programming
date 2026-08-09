@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/996/A
-// Hit The Lottery
+// url: https://codeforces.com/problemset/problem/996/A
+// Title: Hit The Lottery
 #include <bits/stdc++.h>
 using namespace std;
 

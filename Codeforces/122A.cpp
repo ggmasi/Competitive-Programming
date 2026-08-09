@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/122/A
-// Lucky Division
+// url: https://codeforces.com/problemset/problem/122/A
+// Title: Lucky Division
 #include <bits/stdc++.h>
 using namespace std;
 

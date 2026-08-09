@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1084/A
-// The Fair Nut And Elevator
+// url: https://codeforces.com/problemset/problem/1084/A
+// Title: The Fair Nut And Elevator
 #include <bits/stdc++.h>
 using namespace std;
 

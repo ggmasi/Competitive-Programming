@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/791/problem/B
-// Bear And Friendship Condition
+// url: https://codeforces.com/contest/791/problem/B
+// Title: Bear And Friendship Condition
 #include <bits/stdc++.h>
 using namespace std;
 

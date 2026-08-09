@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/514/problem/A
-// Chewbacca And Number
+// url: https://codeforces.com/contest/514/problem/A
+// Title: Chewbacca And Number
 #include <bits/stdc++.h>
 using namespace std;
 

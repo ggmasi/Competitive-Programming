@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1734/C
-// Removing Smallest Multiples
+// url: https://codeforces.com/problemset/problem/1734/C
+// Title: Removing Smallest Multiples
 #include <bits/stdc++.h>
 using namespace std;
 

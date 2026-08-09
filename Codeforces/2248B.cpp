@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2248/problem/B
-// Merge To Match
+// url: https://codeforces.com/contest/2248/problem/B
+// Title: Merge To Match
 #include <bits/stdc++.h>
 using namespace std;
 

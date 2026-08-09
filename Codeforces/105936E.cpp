@@ -1,5 +1,5 @@
-//https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/E
-// Emparelhamento
+// url: https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/E
+// Title: Emparelhamento
 #include <bits/stdc++.h>
 using namespace std;
 

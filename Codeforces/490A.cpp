@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/490/problem/A
-// Team Olympiad
+// url: https://codeforces.com/contest/490/problem/A
+// Title: Team Olympiad
 #include <bits/stdc++.h>
 using namespace std;
 

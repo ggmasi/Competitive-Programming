@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1907/D
-// Jumping Through Segments
+// url: https://codeforces.com/problemset/problem/1907/D
+// Title: Jumping Through Segments
 #include <bits/stdc++.h>
 using namespace std;
 

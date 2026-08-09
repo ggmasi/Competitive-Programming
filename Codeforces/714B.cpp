@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/714/problem/B
-// Filya And Homework
+// url: https://codeforces.com/contest/714/problem/B
+// Title: Filya And Homework
 #include <bits/stdc++.h>
 using namespace std;
 

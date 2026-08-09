@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/107/B
-// Basketball Team
+// url: https://codeforces.com/problemset/problem/107/B
+// Title: Basketball Team
 #include <bits/stdc++.h>
 using namespace std;
 

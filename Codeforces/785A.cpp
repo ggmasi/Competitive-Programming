@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/785/problem/A
-// Anton And Polyhedrons
+// url: https://codeforces.com/contest/785/problem/A
+// Title: Anton And Polyhedrons
 #include <bits/stdc++.h>
 using namespace std;
 

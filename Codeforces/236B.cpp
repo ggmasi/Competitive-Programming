@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/236/problem/B
-// Easy Number Challenge
+// url: https://codeforces.com/contest/236/problem/B
+// Title: Easy Number Challenge
 #include <bits/stdc++.h>
 using namespace std;
 

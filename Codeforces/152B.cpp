@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/152/problem/B
-// Steps
+// url: https://codeforces.com/contest/152/problem/B
+// Title: Steps
 #include <bits/stdc++.h>
 using namespace std;
 

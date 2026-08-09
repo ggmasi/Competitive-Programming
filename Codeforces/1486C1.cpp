@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1486/C1
-// Guessing The Greatest
+// url: https://codeforces.com/problemset/problem/1486/C1
+// Title: Guessing The Greatest
 #include <bits/stdc++.h>
 using namespace std;
 

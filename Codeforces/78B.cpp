@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/78/problem/B
-// Easter Egg
+// url: https://codeforces.com/contest/78/problem/B
+// Title: Easter Egg
 #include <bits/stdc++.h>
 using namespace std;
 

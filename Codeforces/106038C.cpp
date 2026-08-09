@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106038/problem/C
-// Joaopessoa
+// url: https://codeforces.com/gym/106038/problem/C
+// Title: Joaopessoa
 #include <bits/stdc++.h>
 using namespace std;
 

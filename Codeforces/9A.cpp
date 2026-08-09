@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/9/problem/A
-// Die Roll
+// url: https://codeforces.com/contest/9/problem/A
+// Title: Die Roll
 #include <bits/stdc++.h>
 using namespace std;
 

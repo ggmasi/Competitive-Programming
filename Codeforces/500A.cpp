@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/500/A
-// New Year Transportation
+// url: https://codeforces.com/problemset/problem/500/A
+// Title: New Year Transportation
 #include <bits/stdc++.h>
 using namespace std;
 

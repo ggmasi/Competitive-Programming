@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/141/problem/B?locale=en
-// Hopscotch
+// url: https://codeforces.com/contest/141/problem/B?locale=en
+// Title: Hopscotch
 #include <bits/stdc++.h>
 using namespace std;
 

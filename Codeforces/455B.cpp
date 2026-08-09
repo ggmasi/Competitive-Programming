@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/445/problem/B
-// Dzy Loves Chemistry
+// url: https://codeforces.com/contest/445/problem/B
+// Title: Dzy Loves Chemistry
 #include <bits/stdc++.h>
 using namespace std;
 

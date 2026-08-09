@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/431/problem/A
-// Black Square
+// url: https://codeforces.com/contest/431/problem/A
+// Title: Black Square
 #include <bits/stdc++.h>
 using namespace std;
 

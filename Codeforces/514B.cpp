@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/514/problem/B
-// Han Solo And Lazer Gun
+// url: https://codeforces.com/contest/514/problem/B
+// Title: Han Solo And Lazer Gun
 #include <bits/stdc++.h>
 using namespace std;
 

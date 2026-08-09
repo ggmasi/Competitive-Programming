@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/580/problem/B
-// Kefa And Company
+// url: https://codeforces.com/contest/580/problem/B
+// Title: Kefa And Company
 #include <bits/stdc++.h>
 using namespace std;
 

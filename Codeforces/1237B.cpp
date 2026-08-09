@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1237/problem/B
-// Balanced Tunnel
+// url: https://codeforces.com/contest/1237/problem/B
+// Title: Balanced Tunnel
 #include <bits/stdc++.h>
 using namespace std;
 

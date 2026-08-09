@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/352/problem/B
-// Jeff And Periods
+// url: https://codeforces.com/contest/352/problem/B
+// Title: Jeff And Periods
 #include <bits/stdc++.h>
 using namespace std;
 

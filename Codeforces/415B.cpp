@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/415/problem/B
-// Mashmokh And Tokens
+// url: https://codeforces.com/contest/415/problem/B
+// Title: Mashmokh And Tokens
 #include <bits/stdc++.h>
 using namespace std;
 

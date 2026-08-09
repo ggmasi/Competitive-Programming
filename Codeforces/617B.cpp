@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/617/problem/B
-// Chocolate
+// url: https://codeforces.com/contest/617/problem/B
+// Title: Chocolate
 #include <bits/stdc++.h>
 using namespace std;
 

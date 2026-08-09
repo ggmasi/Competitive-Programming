@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/287/problem/A
-// Iq Test
+// url: https://codeforces.com/contest/287/problem/A
+// Title: Iq Test
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/427/problem/A
-// Police Recruits
+// url: https://codeforces.com/contest/427/problem/A
+// Title: Police Recruits
 #include <bits/stdc++.h>
 using namespace std;
 

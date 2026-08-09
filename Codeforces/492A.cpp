@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/492/A
-// Vanya And Cubes
+// url: https://codeforces.com/problemset/problem/492/A
+// Title: Vanya And Cubes
 #include <bits/stdc++.h>
 using namespace std;
  

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1553/C
-// Penalty
+// url: https://codeforces.com/problemset/problem/1553/C
+// Title: Penalty
 #include <bits/stdc++.h>
 using namespace std;
 

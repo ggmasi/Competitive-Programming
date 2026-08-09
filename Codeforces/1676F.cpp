@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1676/F
-// Longest Strike
+// url: https://codeforces.com/problemset/problem/1676/F
+// Title: Longest Strike
 #include <bits/stdc++.h>
 using namespace std;
 

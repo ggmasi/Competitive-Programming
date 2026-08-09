@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/79/problem/B
-// Colorful Field
+// url: https://codeforces.com/contest/79/problem/B
+// Title: Colorful Field
 #include <bits/stdc++.h>
 using namespace std;
 

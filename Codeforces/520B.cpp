@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/520/B
-// Two Buttons
+// url: https://codeforces.com/problemset/problem/520/B
+// Title: Two Buttons
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/799/problem/A
-// Carrot Cakes
+// url: https://codeforces.com/contest/799/problem/A
+// Title: Carrot Cakes
 #include <bits/stdc++.h>
 using namespace std;
 

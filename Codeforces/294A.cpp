@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/294/problem/A
-// Shaass And Oskols
+// url: https://codeforces.com/contest/294/problem/A
+// Title: Shaass And Oskols
 #include <bits/stdc++.h>
 using namespace std;
 

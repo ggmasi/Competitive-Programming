@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/186/problem/B
-// Growing Mushrooms
+// url: https://codeforces.com/contest/186/problem/B
+// Title: Growing Mushrooms
 #include <bits/stdc++.h>
 using namespace std;
 

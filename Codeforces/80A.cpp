@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/80/problem/A
-// Panoramixs Prediction
+// url: https://codeforces.com/contest/80/problem/A
+// Title: Panoramixs Prediction
 #include <bits/stdc++.h>
 using namespace std;
 

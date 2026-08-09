@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2220/problem/A
-// Blocked
+// url: https://codeforces.com/contest/2220/problem/A
+// Title: Blocked
 #include <bits/stdc++.h>
 using namespace std;
 

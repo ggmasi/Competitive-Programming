@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/59/problem/A
-// Word
+// url: https://codeforces.com/contest/59/problem/A
+// Title: Word
 #include <bits/stdc++.h>
 using namespace std;
 

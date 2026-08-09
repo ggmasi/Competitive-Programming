@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106598/problem/A
-// After Em Campinas
+// url: https://codeforces.com/gym/106598/problem/A
+// Title: After Em Campinas
 #include <bits/stdc++.h>
 using namespace std;
 

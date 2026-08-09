@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/337/problem/B
-// Routine Problem
+// url: https://codeforces.com/contest/337/problem/B
+// Title: Routine Problem
 #include <bits/stdc++.h>
 using namespace std;
 

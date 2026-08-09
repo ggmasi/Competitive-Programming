@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/318/A
-// Even Odds
+// url: https://codeforces.com/problemset/problem/318/A
+// Title: Even Odds
 #include <bits/stdc++.h>
 using namespace std;
 

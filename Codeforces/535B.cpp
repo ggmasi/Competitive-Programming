@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/535/problem/B
-// Tavas And Saddas
+// url: https://codeforces.com/contest/535/problem/B
+// Title: Tavas And Saddas
 #include <bits/stdc++.h>
 using namespace std;
 

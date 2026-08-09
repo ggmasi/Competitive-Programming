@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105327/problem/B
-// Bacon Number
+// url: https://codeforces.com/gym/105327/problem/B
+// Title: Bacon Number
 #include <bits/stdc++.h>
 using namespace std;
 int n, m;

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/791/A
-// Bear And Big Brother
+// url: https://codeforces.com/problemset/problem/791/A
+// Title: Bear And Big Brother
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2241/problem/B
-// Good Times Good Times
+// url: https://codeforces.com/contest/2241/problem/B
+// Title: Good Times Good Times
 #include <bits/stdc++.h>
 using namespace std;
 

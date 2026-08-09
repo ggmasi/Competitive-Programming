@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/492/problem/D
-// Vanya And Computer Game
+// url: https://codeforces.com/contest/492/problem/D
+// Title: Vanya And Computer Game
 #include <bits/stdc++.h>
 using namespace std;
 

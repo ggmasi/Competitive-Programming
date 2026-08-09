@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/296/problem/A
-// Yaroslav And Permutations
+// url: https://codeforces.com/contest/296/problem/A
+// Title: Yaroslav And Permutations
 #include <bits/stdc++.h>
 using namespace std;
 

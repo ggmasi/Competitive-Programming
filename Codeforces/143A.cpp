@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/143/problem/A
-// Help Vasilisa The Wise2
+// url: https://codeforces.com/contest/143/problem/A
+// Title: Help Vasilisa The Wise2
 #include <bits/stdc++.h>
 using namespace std;
 

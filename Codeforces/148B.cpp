@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/148/problem/B
-// Escape
+// url: https://codeforces.com/contest/148/problem/B
+// Title: Escape
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/634/A
-// Island Puzzle
+// url: https://codeforces.com/problemset/problem/634/A
+// Title: Island Puzzle
 #include <bits/stdc++.h>
 using namespace std;
 

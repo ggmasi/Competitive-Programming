@@ -1,5 +1,5 @@
-//https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/D
-// Dados
+// url: https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/D
+// Title: Dados
 #include <bits/stdc++.h>
 using namespace std;
 

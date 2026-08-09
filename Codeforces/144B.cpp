@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/144/problem/B
-// Meeting
+// url: https://codeforces.com/contest/144/problem/B
+// Title: Meeting
 #include <bits/stdc++.h>
 using namespace std;
 

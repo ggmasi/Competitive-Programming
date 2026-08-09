@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/584/problem/B
-// Kolya And Tanya
+// url: https://codeforces.com/contest/584/problem/B
+// Title: Kolya And Tanya
 #include <bits/stdc++.h>
 using namespace std;
 

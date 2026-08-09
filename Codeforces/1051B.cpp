@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1051/problem/B
-// Relatively Prime Pairs
+// url: https://codeforces.com/contest/1051/problem/B
+// Title: Relatively Prime Pairs
 #include <bits/stdc++.h>
 using namespace std;
 

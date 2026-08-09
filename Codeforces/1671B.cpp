@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1671/B
-// Consecutive Points Segment
+// url: https://codeforces.com/problemset/problem/1671/B
+// Title: Consecutive Points Segment
 #include <bits/stdc++.h>
 using namespace std;
 

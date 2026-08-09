@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105904/problem/K
-// Kickboxing
+// url: https://codeforces.com/gym/105904/problem/K
+// Title: Kickboxing
 #include <bits/stdc++.h>
 using namespace std;
 

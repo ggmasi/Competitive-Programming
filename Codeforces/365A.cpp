@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/365/problem/A
-// Good Number
+// url: https://codeforces.com/contest/365/problem/A
+// Title: Good Number
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/102/problem/B
-// Sum Of Digits
+// url: https://codeforces.com/contest/102/problem/B
+// Title: Sum Of Digits
 #include <bits/stdc++.h>
 using namespace std;
 

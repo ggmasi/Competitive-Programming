@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/988/A
-// Diverse Team
+// url: https://codeforces.com/problemset/problem/988/A
+// Title: Diverse Team
 #include <bits/stdc++.h>
 using namespace std;
 

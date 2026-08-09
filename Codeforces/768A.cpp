@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/768/problem/A
-// Oath Of The Nights Watch
+// url: https://codeforces.com/contest/768/problem/A
+// Title: Oath Of The Nights Watch
 #include <bits/stdc++.h>
 using namespace std;
 

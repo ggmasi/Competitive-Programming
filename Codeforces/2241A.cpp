@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2241/problem/A
-// Divide And Conquer
+// url: https://codeforces.com/contest/2241/problem/A
+// Title: Divide And Conquer
 #include <bits/stdc++.h>
 using namespace std;
 

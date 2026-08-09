@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1138/A
-// Sushi For Two
+// url: https://codeforces.com/problemset/problem/1138/A
+// Title: Sushi For Two
 #include <bits/stdc++.h>
 using namespace std;
 

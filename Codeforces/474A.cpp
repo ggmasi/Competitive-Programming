@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/474/A
-// Keyboard
+// url: https://codeforces.com/problemset/problem/474/A
+// Title: Keyboard
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2253/problem/B
-// Hypercarp And The Control Panel
+// url: https://codeforces.com/contest/2253/problem/B
+// Title: Hypercarp And The Control Panel
 #include <bits/stdc++.h>
 using namespace std;
 

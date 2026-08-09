@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2225/problem/A
-// A Number Between Two Others
+// url: https://codeforces.com/contest/2225/problem/A
+// Title: A Number Between Two Others
 #include <bits/stdc++.h>
 using namespace std;
 

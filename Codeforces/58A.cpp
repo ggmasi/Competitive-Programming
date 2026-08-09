@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/58/A
-// Chat Room
+// url: https://codeforces.com/problemset/problem/58/A
+// Title: Chat Room
 #include <bits/stdc++.h>
 using namespace std;
 

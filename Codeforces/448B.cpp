@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/448/problem/B
-// Suffix Structures
+// url: https://codeforces.com/contest/448/problem/B
+// Title: Suffix Structures
 #include <bits/stdc++.h>
 using namespace std;
 

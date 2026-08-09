@@ -1,5 +1,5 @@
-//https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/C
-// Cartas
+// url: https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/C
+// Title: Cartas
 #include <bits/stdc++.h>
 using namespace std;
 

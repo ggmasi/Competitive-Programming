@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/707/C
-// Pythagorean Triples
+// url: https://codeforces.com/problemset/problem/707/C
+// Title: Pythagorean Triples
 #include <bits/stdc++.h>
 using namespace std;
 

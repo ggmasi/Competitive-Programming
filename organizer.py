@@ -16,10 +16,6 @@ judges = {
 }
 
 def formatar_nome_titulo(nome):
-    """
-    Transforma nomes como 'nomeDoExercicio', 'NomeDoExercicio' ou 'nome_do_exercicio'
-    em 'Nome Do Exercicio'.
-    """
     nome_sem_simbolos = nome.replace('_', ' ').replace('-', ' ')
     nome_separado = re.sub(r'([a-z])([A-Z])', r'\1 \2', nome_sem_simbolos)
     return " ".join(nome_separado.split()).title()
@@ -31,7 +27,6 @@ def limpar_nomes_e_inserir_titulo(diretorio):
         print(f"Erro: O diretório '{diretorio}' não existe.")
         return
 
-    # REGRA ATUALIZADA: Aceita qualquer combinação de letras e números antes do '_'
     padrao_nome = re.compile(r'^([A-Za-z0-9]+)_(.+)(\.[a-zA-Z0-9]+)$')
 
     print(f"Iniciando a formatação na pasta: {diretorio}...")
@@ -40,44 +35,64 @@ def limpar_nomes_e_inserir_titulo(diretorio):
         if not arquivo.is_file():
             continue
 
-        match = padrao_nome.match(arquivo.name)
-        if match:
-            codigo_exercicio = match.group(1)   
-            nome_exercicio_bruto = match.group(2) 
-            extensao = match.group(3)           
+        extensao = arquivo.suffix.lower()
+        
+        # Ignora arquivos que não são código
+        if extensao in ['.cpp', '.c', '.java']:
+            prefixo = "//"
+        elif extensao == '.py':
+            prefixo = "#"
+        elif extensao == '.sql':
+            prefixo = "--"
+        else:
+            continue 
 
-            nome_exercicio_formatado = formatar_nome_titulo(nome_exercicio_bruto)
-            novo_nome_arquivo = f"{codigo_exercicio}{extensao}"
-            
-            if extensao in ['.cpp', '.c', '.java']:
-                linha_comentario = f"// {nome_exercicio_formatado}\n"
-            elif extensao == '.py':
-                linha_comentario = f"# {nome_exercicio_formatado}\n"
-            elif extensao == '.sql':
-                linha_comentario = f"-- {nome_exercicio_formatado}\n"
-            else:
-                linha_comentario = f"// {nome_exercicio_formatado}\n"
-
+        try:
+            # Tenta ler o arquivo
             try:
                 with open(arquivo, 'r', encoding='utf-8') as f:
                     linhas = f.readlines()
+            except UnicodeDecodeError:
+                with open(arquivo, 'r', encoding='latin-1') as f:
+                    linhas = f.readlines()
 
-                if len(linhas) > 0:
-                    if len(linhas) < 2 or linha_comentario.strip() not in linhas[1]:
-                        linhas.insert(1, linha_comentario)
-                
+            modificou_conteudo = False
+
+            if len(linhas) >= 2:
+                # --- ARRUMAR A LINHA 1 (URL) ---
+                primeira_linha = linhas[0].strip()
+                if "url:" not in primeira_linha.lower():
+                    # Remove o símbolo de comentário velho se existir
+                    conteudo_url = primeira_linha[len(prefixo):].strip() if primeira_linha.startswith(prefixo) else primeira_linha
+                    linhas[0] = f"{prefixo} url: {conteudo_url}\n"
+                    modificou_conteudo = True
+
+                # --- ARRUMAR A LINHA 2 (TITLE) ---
+                segunda_linha = linhas[1].strip()
+                if "title:" not in segunda_linha.lower():
+                    # Remove o símbolo de comentário velho se existir
+                    conteudo_titulo = segunda_linha[len(prefixo):].strip() if segunda_linha.startswith(prefixo) else segunda_linha
+                    linhas[1] = f"{prefixo} Title: {conteudo_titulo}\n"
+                    modificou_conteudo = True
+
+            # Salva o arquivo de volta se mexeu nas linhas
+            if modificou_conteudo:
                 with open(arquivo, 'w', encoding='utf-8') as f:
                     f.writelines(linhas)
 
+            # --- PARTE DE RENOMEAR (Caso ainda tenha o "_" no nome) ---
+            match = padrao_nome.match(arquivo.name)
+            if match:
+                codigo_exercicio = match.group(1)   
+                novo_nome_arquivo = f"{codigo_exercicio}{extensao}"
                 novo_caminho = arquivo.with_name(novo_nome_arquivo)
                 arquivo.rename(novo_caminho)
-                
-                print(f"[OK] Alterado: {arquivo.name} -> {novo_nome_arquivo} (Comentário: {nome_exercicio_formatado})")
+                print(f"[OK] Alterado linhas e renomeado: {arquivo.name} -> {novo_nome_arquivo}")
+            elif modificou_conteudo:
+                print(f"[OK] Alterado linhas (URL/Title): {arquivo.name}")
 
-            except UnicodeDecodeError:
-                print(f"[ERRO] Problema de encoding em {arquivo.name}. Tente mudar para 'latin-1'.")
-            except Exception as e:
-                print(f"[ERRO] Falha ao processar {arquivo.name}: {e}")
+        except Exception as e:
+            print(f"[ERRO] Falha ao processar {arquivo.name}: {e}")
 
 def organizar_por_recorte():
     print("Iniciando a organização (Recortar e Colar)...")

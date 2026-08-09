@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/807/problem/A
-// Is It Rated
+// url: https://codeforces.com/contest/807/problem/A
+// Title: Is It Rated
 #include <bits/stdc++.h>
 using namespace std;
 

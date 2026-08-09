@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1190/A
-// Tokitsukaze And Discard Items
+// url: https://codeforces.com/problemset/problem/1190/A
+// Title: Tokitsukaze And Discard Items
 #include <bits/stdc++.h>
 using namespace std;
 

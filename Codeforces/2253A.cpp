@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2253/problem/0
-// The Best Card
+// url: https://codeforces.com/contest/2253/problem/0
+// Title: The Best Card
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/608/problem/B
-// Hamming Distance Sum
+// url: https://codeforces.com/contest/608/problem/B
+// Title: Hamming Distance Sum
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2253/problem/C3
-// Sum Of Distinct Values In Amatrix
+// url: https://codeforces.com/contest/2253/problem/C3
+// Title: Sum Of Distinct Values In Amatrix
 #include <bits/stdc++.h>
 using namespace std;
 

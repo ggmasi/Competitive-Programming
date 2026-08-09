@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2248/problem/C
-// Maximize The Score
+// url: https://codeforces.com/contest/2248/problem/C
+// Title: Maximize The Score
 #include <bits/stdc++.h>
 using namespace std;
 

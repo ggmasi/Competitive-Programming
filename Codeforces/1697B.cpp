@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1697/B
-// Promo
+// url: https://codeforces.com/problemset/problem/1697/B
+// Title: Promo
 #include <bits/stdc++.h>
 using namespace std;
 

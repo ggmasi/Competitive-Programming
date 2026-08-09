@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/716/problem/B
-// Complete The Word
+// url: https://codeforces.com/contest/716/problem/B
+// Title: Complete The Word
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/208/problem/A
-// Dubstep
+// url: https://codeforces.com/contest/208/problem/A
+// Title: Dubstep
 #include <bits/stdc++.h>
 using namespace std;
 

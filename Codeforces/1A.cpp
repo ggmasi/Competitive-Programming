@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1/problem/A
-// Theatre Square
+// url: https://codeforces.com/contest/1/problem/A
+// Title: Theatre Square
 #include <bits/stdc++.h>
 using namespace std;
 

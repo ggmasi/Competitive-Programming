@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1915/A
-// Odd One Out
+// url: https://codeforces.com/problemset/problem/1915/A
+// Title: Odd One Out
 #include <bits/stdc++.h>
 using namespace std;
 

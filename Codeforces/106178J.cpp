@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106178/problem/J
-// Judgmental Crowd
+// url: https://codeforces.com/gym/106178/problem/J
+// Title: Judgmental Crowd
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/405/problem/A
-// Gravity Flip
+// url: https://codeforces.com/contest/405/problem/A
+// Title: Gravity Flip
 #include <bits/stdc++.h>
 using namespace std;
 

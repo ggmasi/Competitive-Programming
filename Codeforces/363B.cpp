@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/363/problem/B
-// Fence
+// url: https://codeforces.com/contest/363/problem/B
+// Title: Fence
 #include <bits/stdc++.h>
 using namespace std;
 

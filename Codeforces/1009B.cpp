@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1009/problem/B
-// Minimum Ternary String
+// url: https://codeforces.com/contest/1009/problem/B
+// Title: Minimum Ternary String
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/20/C
-// Dijkstra20C
+// url: https://codeforces.com/problemset/problem/20/C
+// Title: Dijkstra20C
 #include <bits/stdc++.h>
 using namespace std;
 

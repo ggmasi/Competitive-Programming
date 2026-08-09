@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/2055/A
-// Two Frogs
+// url: https://codeforces.com/problemset/problem/2055/A
+// Title: Two Frogs
 #include <bits/stdc++.h>
 using namespace std;
 

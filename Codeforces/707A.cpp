@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/707/problem/A
-// Brains Photos
+// url: https://codeforces.com/contest/707/problem/A
+// Title: Brains Photos
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/709/problem/A
-// Juicer
+// url: https://codeforces.com/contest/709/problem/A
+// Title: Juicer
 #include <bits/stdc++.h>
 using namespace std;
 

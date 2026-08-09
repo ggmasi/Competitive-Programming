@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/602/problem/B
-// Approximating Aconstant Range
+// url: https://codeforces.com/contest/602/problem/B
+// Title: Approximating Aconstant Range
 #include <bits/stdc++.h>
 using namespace std;
 

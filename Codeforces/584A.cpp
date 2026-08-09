@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/584/problem/A
-// Olesya And Rodion
+// url: https://codeforces.com/contest/584/problem/A
+// Title: Olesya And Rodion
 #include <bits/stdc++.h>
 using namespace std;
 

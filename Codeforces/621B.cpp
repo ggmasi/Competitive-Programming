@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/621/problem/B
-// Wet Shark And Bishops
+// url: https://codeforces.com/contest/621/problem/B
+// Title: Wet Shark And Bishops
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/253/problem/B
-// Physics Practical
+// url: https://codeforces.com/contest/253/problem/B
+// Title: Physics Practical
 #include <bits/stdc++.h>
 using namespace std;
 

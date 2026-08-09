@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/580/C
-// Kefa And Park
+// url: https://codeforces.com/problemset/problem/580/C
+// Title: Kefa And Park
 #include <bits/stdc++.h>
 using namespace std;
 

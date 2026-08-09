@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1921/E
-// Eat The Chip
+// url: https://codeforces.com/problemset/problem/1921/E
+// Title: Eat The Chip
 #include <bits/stdc++.h>
 using namespace std;
 

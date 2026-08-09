@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/363/problem/A
-// Soroban
+// url: https://codeforces.com/contest/363/problem/A
+// Title: Soroban
 #include <bits/stdc++.h>
 using namespace std;
 

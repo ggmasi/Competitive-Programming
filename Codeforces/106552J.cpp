@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/gymProblem/106552/J
-// Jogo Do Beta
+// url: https://codeforces.com/problemset/gymProblem/106552/J
+// Title: Jogo Do Beta
 #include <bits/stdc++.h>
 using namespace std;
  

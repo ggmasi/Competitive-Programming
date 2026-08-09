@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/486/problem/B
-// Or In Matrix
+// url: https://codeforces.com/contest/486/problem/B
+// Title: Or In Matrix
 #include <bits/stdc++.h>
 using namespace std;
 

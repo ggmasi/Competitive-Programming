@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/567/problem/A
-// Lineland Mail
+// url: https://codeforces.com/contest/567/problem/A
+// Title: Lineland Mail
 #include <bits/stdc++.h>
 using namespace std;
 

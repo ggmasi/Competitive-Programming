@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/766/problem/B
-// Mahmoud And Atriangle
+// url: https://codeforces.com/contest/766/problem/B
+// Title: Mahmoud And Atriangle
 #include <bits/stdc++.h>
 using namespace std;
 

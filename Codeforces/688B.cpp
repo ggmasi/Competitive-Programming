@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/688/problem/B
-// Lovely Palindromes
+// url: https://codeforces.com/contest/688/problem/B
+// Title: Lovely Palindromes
 #include <bits/stdc++.h>
 using namespace std;
 

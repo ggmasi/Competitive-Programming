@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/gymProblem/104555/C
-// Challenging Hike
+// url: https://codeforces.com/problemset/gymProblem/104555/C
+// Title: Challenging Hike
 #include <bits/stdc++.h>
 using namespace std;
 

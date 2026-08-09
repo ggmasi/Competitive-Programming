@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2254/problem/C1
-// Marenol Easy Version
+// url: https://codeforces.com/contest/2254/problem/C1
+// Title: Marenol Easy Version
 #include <bits/stdc++.h>
 using namespace std;
 

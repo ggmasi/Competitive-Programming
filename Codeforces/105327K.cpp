@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105327/problem/K
-// Karamell
+// url: https://codeforces.com/gym/105327/problem/K
+// Title: Karamell
 #include <bits/stdc++.h>
 using namespace std;
 

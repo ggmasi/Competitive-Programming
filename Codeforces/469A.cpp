@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/469/problem/A
-// I Wanna Be The Guy
+// url: https://codeforces.com/contest/469/problem/A
+// Title: I Wanna Be The Guy
 #include <bits/stdc++.h>
 using namespace std;
 

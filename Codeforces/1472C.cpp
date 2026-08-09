@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1472/C
-// Long Jumps
+// url: https://codeforces.com/problemset/problem/1472/C
+// Title: Long Jumps
 #include <bits/stdc++.h>
 using namespace std;
 

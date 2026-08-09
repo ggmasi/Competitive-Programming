@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/6/problem/B
-// Presidents Office
+// url: https://codeforces.com/contest/6/problem/B
+// Title: Presidents Office
 #include <bits/stdc++.h>
 using namespace std;
 

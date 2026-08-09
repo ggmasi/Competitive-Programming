@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2254/problem/A
-// Riptide
+// url: https://codeforces.com/contest/2254/problem/A
+// Title: Riptide
 #include <bits/stdc++.h>
 using namespace std;
 

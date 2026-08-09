@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106598/problem/I
-// Insercao De Digitos
+// url: https://codeforces.com/gym/106598/problem/I
+// Title: Insercao De Digitos
 #include <bits/stdc++.h>
 using namespace std;
 

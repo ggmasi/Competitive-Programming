@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/614/problem/B
-// Genas Code
+// url: https://codeforces.com/contest/614/problem/B
+// Title: Genas Code
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/525/C
-// Ilya And Sticks
+// url: https://codeforces.com/problemset/problem/525/C
+// Title: Ilya And Sticks
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2248/problem/A
-// You Delete Idelete
+// url: https://codeforces.com/contest/2248/problem/A
+// Title: You Delete Idelete
 #include <bits/stdc++.h>
 using namespace std;
 

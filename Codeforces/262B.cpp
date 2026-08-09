@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/262/problem/B
-// Roma And Changing Signs
+// url: https://codeforces.com/contest/262/problem/B
+// Title: Roma And Changing Signs
 #include <bits/stdc++.h>
 using namespace std;
 

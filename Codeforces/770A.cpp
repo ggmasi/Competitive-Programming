@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/770/A
-// New Password
+// url: https://codeforces.com/problemset/problem/770/A
+// Title: New Password
 #include <bits/stdc++.h>
 using namespace std;
 

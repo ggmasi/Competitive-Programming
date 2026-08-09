@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105327/problem/L
-// Lexicograficamente Maximo
+// url: https://codeforces.com/gym/105327/problem/L
+// Title: Lexicograficamente Maximo
 #include <bits/stdc++.h>
 using namespace std;
 

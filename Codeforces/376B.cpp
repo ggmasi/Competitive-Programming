@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/376/problem/B
-// Iou
+// url: https://codeforces.com/contest/376/problem/B
+// Title: Iou
 #include <bits/stdc++.h>
 using namespace std;
 

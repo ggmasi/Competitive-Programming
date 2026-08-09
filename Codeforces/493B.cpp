@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/493/problem/B
-// Vasya And Wrestling
+// url: https://codeforces.com/contest/493/problem/B
+// Title: Vasya And Wrestling
 #include <bits/stdc++.h>
 using namespace std;
 

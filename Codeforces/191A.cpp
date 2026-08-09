@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/191/A
-// Dynasty Puzzles
+// url: https://codeforces.com/problemset/problem/191/A
+// Title: Dynasty Puzzles
 #include <bits/stdc++.h>
 using namespace std;
 

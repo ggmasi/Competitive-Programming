@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/483/problem/A
-// Counterexample
+// url: https://codeforces.com/contest/483/problem/A
+// Title: Counterexample
 #include <bits/stdc++.h>
 using namespace std;
 

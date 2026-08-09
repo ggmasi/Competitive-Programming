@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/492/B
-// Vanya And Lanterns
+// url: https://codeforces.com/problemset/problem/492/B
+// Title: Vanya And Lanterns
 #include <bits/stdc++.h>
 using namespace std;
 

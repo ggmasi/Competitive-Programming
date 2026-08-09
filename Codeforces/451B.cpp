@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/451/problem/B
-// Sort The Array
+// url: https://codeforces.com/contest/451/problem/B
+// Title: Sort The Array
 #include <bits/stdc++.h>
 using namespace std;
 

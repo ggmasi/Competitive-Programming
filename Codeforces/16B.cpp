@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/16/problem/B
-// Burglar And Matches
+// url: https://codeforces.com/contest/16/problem/B
+// Title: Burglar And Matches
 #include <bits/stdc++.h>
 using namespace std;
 

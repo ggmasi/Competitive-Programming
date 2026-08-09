@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/385/problem/B
-// Bear And Strings
+// url: https://codeforces.com/contest/385/problem/B
+// Title: Bear And Strings
 #include <bits/stdc++.h>
 using namespace std;
 

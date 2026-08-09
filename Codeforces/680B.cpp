@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/680/problem/B
-// Bear And Finding Criminals
+// url: https://codeforces.com/contest/680/problem/B
+// Title: Bear And Finding Criminals
 #include <bits/stdc++.h>
 using namespace std;
 

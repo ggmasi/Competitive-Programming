@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2254/problem/B
-// Evanescent
+// url: https://codeforces.com/contest/2254/problem/B
+// Title: Evanescent
 #include <bits/stdc++.h>
 using namespace std;
 

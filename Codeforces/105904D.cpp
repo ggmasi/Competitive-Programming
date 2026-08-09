@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105904/problem/D
-// Dogao Paulista
+// url: https://codeforces.com/gym/105904/problem/D
+// Title: Dogao Paulista
 #include <bits/stdc++.h>
 using namespace std;
 

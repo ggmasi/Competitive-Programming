@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106038/problem/A
-// Salvador
+// url: https://codeforces.com/gym/106038/problem/A
+// Title: Salvador
 #include <bits/stdc++.h>
 using namespace std;
 

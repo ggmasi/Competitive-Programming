@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/476/problem/B
-// Dreamoon And Wifi
+// url: https://codeforces.com/contest/476/problem/B
+// Title: Dreamoon And Wifi
 #include <bits/stdc++.h>
 using namespace std;
 

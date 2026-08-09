@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/225/problem/A
-// Dice Tower
+// url: https://codeforces.com/contest/225/problem/A
+// Title: Dice Tower
 #include <bits/stdc++.h>
 using namespace std;
 

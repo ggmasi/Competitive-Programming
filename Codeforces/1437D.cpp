@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1437/D
-// Minimal Height Tree
+// url: https://codeforces.com/problemset/problem/1437/D
+// Title: Minimal Height Tree
 #include <bits/stdc++.h>
 using namespace std;
 

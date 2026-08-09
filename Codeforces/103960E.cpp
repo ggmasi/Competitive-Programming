@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/103960/problem/E
-// Eliminating Baloons
+// url: https://codeforces.com/gym/103960/problem/E
+// Title: Eliminating Baloons
 #include <bits/stdc++.h>
 using namespace std;
 

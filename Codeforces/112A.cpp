@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/112/problem/A
-// Petya And Strings
+// url: https://codeforces.com/contest/112/problem/A
+// Title: Petya And Strings
 #include <bits/stdc++.h>
 using namespace std;
 

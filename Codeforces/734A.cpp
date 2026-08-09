@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/734/problem/A
-// Anton And Danik
+// url: https://codeforces.com/contest/734/problem/A
+// Title: Anton And Danik
 #include <bits/stdc++.h>
 using namespace std;
 

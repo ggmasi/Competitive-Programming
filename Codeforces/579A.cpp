@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/579/problem/A
-// Raising Bacteria
+// url: https://codeforces.com/contest/579/problem/A
+// Title: Raising Bacteria
 #include <bits/stdc++.h>
 using namespace std;
 

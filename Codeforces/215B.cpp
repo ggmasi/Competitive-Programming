@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/215/problem/B
-// Olympic Medal
+// url: https://codeforces.com/contest/215/problem/B
+// Title: Olympic Medal
 #include <bits/stdc++.h>
 using namespace std;
 

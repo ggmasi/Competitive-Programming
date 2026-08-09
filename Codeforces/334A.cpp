@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/334/A
-// Candy Bags
+// url: https://codeforces.com/problemset/problem/334/A
+// Title: Candy Bags
 #include <bits/stdc++.h>
 using namespace std;
 

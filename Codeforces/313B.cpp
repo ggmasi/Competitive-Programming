@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/313/B
-// Ilya And Queries
+// url: https://codeforces.com/problemset/problem/313/B
+// Title: Ilya And Queries
 #include <bits/stdc++.h>
 using namespace std;
 

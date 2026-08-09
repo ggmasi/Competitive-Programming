@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/699/problem/A
-// Launch Of Collider
+// url: https://codeforces.com/contest/699/problem/A
+// Title: Launch Of Collider
 #include <bits/stdc++.h>
 using namespace std;
 

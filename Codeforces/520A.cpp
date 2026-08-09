@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/520/problem/A
-// Pangram
+// url: https://codeforces.com/contest/520/problem/A
+// Title: Pangram
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/222/B
-// Cosmic Tables
+// url: https://codeforces.com/problemset/problem/222/B
+// Title: Cosmic Tables
 #include <bits/stdc++.h>
 using namespace std;
 

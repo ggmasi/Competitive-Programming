@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/218/problem/A
-// Mountain Scenery
+// url: https://codeforces.com/contest/218/problem/A
+// Title: Mountain Scenery
 #include <bits/stdc++.h>
 using namespace std;
 

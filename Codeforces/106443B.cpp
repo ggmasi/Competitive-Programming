@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/gymProblem/106443/B
-// Balatro
+// url: https://codeforces.com/problemset/gymProblem/106443/B
+// Title: Balatro
 #include <bits/stdc++.h>
 using namespace std;
 

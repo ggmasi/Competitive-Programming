@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/810/problem/B
-// Summer Sell Off
+// url: https://codeforces.com/contest/810/problem/B
+// Title: Summer Sell Off
 #include <bits/stdc++.h>
 using namespace std;
 

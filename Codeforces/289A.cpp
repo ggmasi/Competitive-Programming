@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/289/problem/A
-// Polo The Penguin And Segments
+// url: https://codeforces.com/contest/289/problem/A
+// Title: Polo The Penguin And Segments
 #include <bits/stdc++.h>
 using namespace std;
 

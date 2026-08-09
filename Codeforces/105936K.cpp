@@ -1,5 +1,5 @@
-//https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/K
-// Kubitschek
+// url: https://codeforces.com/group/YgJmumGtHD/contest/105936/problem/K
+// Title: Kubitschek
 #include <bits/stdc++.h>
 using namespace std;
  

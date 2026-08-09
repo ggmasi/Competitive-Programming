@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/494/A
-// Treasure
+// url: https://codeforces.com/problemset/problem/494/A
+// Title: Treasure
 #include <bits/stdc++.h>
 using namespace std;
 

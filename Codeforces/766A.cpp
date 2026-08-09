@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/766/problem/A
-// Mahmoud And Longest Uncommon Subsequence
+// url: https://codeforces.com/contest/766/problem/A
+// Title: Mahmoud And Longest Uncommon Subsequence
 #include <bits/stdc++.h>
 using namespace std;
 

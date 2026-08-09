@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/706/B/
-// Interesting Drink
+// url: https://codeforces.com/problemset/problem/706/B/
+// Title: Interesting Drink
 #include <bits/stdc++.h>
 using namespace std;
  

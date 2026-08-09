@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/16/A
-// Flag
+// url: https://codeforces.com/problemset/problem/16/A
+// Title: Flag
 #include <bits/stdc++.h>
 using namespace std;
 

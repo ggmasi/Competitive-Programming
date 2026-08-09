@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/486/A
-// Calculating Function
+// url: https://codeforces.com/problemset/problem/486/A
+// Title: Calculating Function
 #include <bits/stdc++.h>
 using namespace std;
 

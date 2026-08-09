@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/863/B
-// Kayaking
+// url: https://codeforces.com/problemset/problem/863/B
+// Title: Kayaking
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/510/problem/B
-// Fox And Two Dots
+// url: https://codeforces.com/contest/510/problem/B
+// Title: Fox And Two Dots
 #include <bits/stdc++.h>
 using namespace std;
 

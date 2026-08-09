@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/492/problem/C
-// Vanya And Exams
+// url: https://codeforces.com/contest/492/problem/C
+// Title: Vanya And Exams
 #include <bits/stdc++.h>
 using namespace std;
 

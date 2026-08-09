@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/344/problem/A
-// Magnets
+// url: https://codeforces.com/contest/344/problem/A
+// Title: Magnets
 #include <bits/stdc++.h>
 using namespace std;
 

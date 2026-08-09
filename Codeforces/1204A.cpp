@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1204/problem/A
-// Bow Wow And The Timetable
+// url: https://codeforces.com/contest/1204/problem/A
+// Title: Bow Wow And The Timetable
 #include <bits/stdc++.h>
 using namespace std;
 

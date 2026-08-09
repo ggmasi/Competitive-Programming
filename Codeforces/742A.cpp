@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/742/problem/A
-// Arpas Hard Exam And Mehrdads Naive Cheat
+// url: https://codeforces.com/contest/742/problem/A
+// Title: Arpas Hard Exam And Mehrdads Naive Cheat
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/47/problem/B
-// Coins
+// url: https://codeforces.com/contest/47/problem/B
+// Title: Coins
 #include <bits/stdc++.h>
 using namespace std;
 

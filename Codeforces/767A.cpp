@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/767/A
-// Snacktower
+// url: https://codeforces.com/problemset/problem/767/A
+// Title: Snacktower
 #include <bits/stdc++.h>
 using namespace std;
 

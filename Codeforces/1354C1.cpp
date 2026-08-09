@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1354/C1
-// Simple Polygon Embedding
+// url: https://codeforces.com/problemset/problem/1354/C1
+// Title: Simple Polygon Embedding
 #include <bits/stdc++.h>
 using namespace std;
 

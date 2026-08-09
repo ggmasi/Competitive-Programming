@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/580/A
-// Kefa And First Steps
+// url: https://codeforces.com/problemset/problem/580/A
+// Title: Kefa And First Steps
 #include <bits/stdc++.h>
 using namespace std;
 

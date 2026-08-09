@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/265/problem/A
-// Colorful Stones
+// url: https://codeforces.com/contest/265/problem/A
+// Title: Colorful Stones
 #include <bits/stdc++.h>
 using namespace std;
 

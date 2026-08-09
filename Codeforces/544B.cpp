@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/544/problem/B
-// Sea And Islands
+// url: https://codeforces.com/contest/544/problem/B
+// Title: Sea And Islands
 #include <bits/stdc++.h>
 using namespace std;
 

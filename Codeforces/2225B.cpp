@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2225/problem/B
-// Alternating String
+// url: https://codeforces.com/contest/2225/problem/B
+// Title: Alternating String
 #include <bits/stdc++.h>
 using namespace std;
 

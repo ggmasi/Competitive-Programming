@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/433/problem/B
-// Kuriyama Mirais Stone
+// url: https://codeforces.com/contest/433/problem/B
+// Title: Kuriyama Mirais Stone
 #include <bits/stdc++.h>
 using namespace std;
 

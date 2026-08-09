@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1335/D
-// Anti Sudoku
+// url: https://codeforces.com/problemset/problem/1335/D
+// Title: Anti Sudoku
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/129/problem/B
-// Students And Shoelaces
+// url: https://codeforces.com/contest/129/problem/B
+// Title: Students And Shoelaces
 #include <bits/stdc++.h>
 using namespace std;
 

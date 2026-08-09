@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/400/problem/B
-// Inna And New Matrix Of Candies
+// url: https://codeforces.com/contest/400/problem/B
+// Title: Inna And New Matrix Of Candies
 #include <bits/stdc++.h>
 using namespace std;
 

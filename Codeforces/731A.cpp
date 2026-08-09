@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/731/problem/A
-// Night At The Museum
+// url: https://codeforces.com/contest/731/problem/A
+// Title: Night At The Museum
 #include <bits/stdc++.h>
 using namespace std;
 

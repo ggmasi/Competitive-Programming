@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/298/problem/A
-// Snow Footprints
+// url: https://codeforces.com/contest/298/problem/A
+// Title: Snow Footprints
 #include <bits/stdc++.h>
 using namespace std;
 

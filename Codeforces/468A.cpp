@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/468/A
-// 24Game
+// url: https://codeforces.com/problemset/problem/468/A
+// Title: 24Game
 #include <bits/stdc++.h>
 using namespace std;
 

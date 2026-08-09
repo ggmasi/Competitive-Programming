@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/746/problem/B
-// Decoding
+// url: https://codeforces.com/contest/746/problem/B
+// Title: Decoding
 #include <bits/stdc++.h>
 using namespace std;
 

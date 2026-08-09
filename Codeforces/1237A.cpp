@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/1237/problem/A
-// Balanced Rating Changes
+// url: https://codeforces.com/contest/1237/problem/A
+// Title: Balanced Rating Changes
 #include <bits/stdc++.h>
 using namespace std;
 

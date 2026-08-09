@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1535/C
-// Unstable String
+// url: https://codeforces.com/problemset/problem/1535/C
+// Title: Unstable String
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/2225/problem/C
-// Red Black Pairs
+// url: https://codeforces.com/contest/2225/problem/C
+// Title: Red Black Pairs
 #include <bits/stdc++.h>
 using namespace std;
 

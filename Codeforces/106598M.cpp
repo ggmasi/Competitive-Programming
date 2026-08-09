@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106598/problem/M
-// Multipalavra
+// url: https://codeforces.com/gym/106598/problem/M
+// Title: Multipalavra
 #include <bits/stdc++.h>
 using namespace std;
 

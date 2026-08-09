@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/2210/A
-// A Simple Sequence
+// url: https://codeforces.com/problemset/problem/2210/A
+// Title: A Simple Sequence
 #include <bits/stdc++.h>
 using namespace std;
 

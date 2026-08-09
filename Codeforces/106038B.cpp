@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/106038/problem/B
-// Astana
+// url: https://codeforces.com/gym/106038/problem/B
+// Title: Astana
 #include <bits/stdc++.h>
 using namespace std;
 

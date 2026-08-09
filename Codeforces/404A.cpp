@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/404/problem/A
-// Valera And X
+// url: https://codeforces.com/contest/404/problem/A
+// Title: Valera And X
 #include <bits/stdc++.h>
 using namespace std;
 

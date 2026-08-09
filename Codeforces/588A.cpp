@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/588/A
-// Duff And Meal
+// url: https://codeforces.com/problemset/problem/588/A
+// Title: Duff And Meal
 #include <bits/stdc++.h>
 using namespace std;
 

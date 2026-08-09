@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/248/problem/A
-// Cupboards
+// url: https://codeforces.com/contest/248/problem/A
+// Title: Cupboards
 #include <bits/stdc++.h>
 using namespace std;
 

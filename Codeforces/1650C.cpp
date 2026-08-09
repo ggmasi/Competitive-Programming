@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/1650/C
-// Weight Of The System Of Nested Segments
+// url: https://codeforces.com/problemset/problem/1650/C
+// Title: Weight Of The System Of Nested Segments
 #include <bits/stdc++.h>
 using namespace std;
 

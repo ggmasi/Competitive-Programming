@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/359/B
-// Permutation
+// url: https://codeforces.com/problemset/problem/359/B
+// Title: Permutation
 #include <bits/stdc++.h>
 using namespace std;
 

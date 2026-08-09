@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/105327/problem/G
-// Geography Of Rivers
+// url: https://codeforces.com/gym/105327/problem/G
+// Title: Geography Of Rivers
 #include <bits/stdc++.h>
 using namespace std;
 

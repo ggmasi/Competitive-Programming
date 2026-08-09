@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/189/A
-// Cut Ribbon
+// url: https://codeforces.com/problemset/problem/189/A
+// Title: Cut Ribbon
 #include <bits/stdc++.h>
 using namespace std;
 

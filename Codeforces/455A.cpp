@@ -1,5 +1,5 @@
-//https://codeforces.com/problemset/problem/455/A
-// Boredom
+// url: https://codeforces.com/problemset/problem/455/A
+// Title: Boredom
 #include <bits/stdc++.h>
 using namespace std;
 

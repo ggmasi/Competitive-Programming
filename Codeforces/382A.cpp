@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/382/problem/A
-// Ksenia And Pan Scales
+// url: https://codeforces.com/contest/382/problem/A
+// Title: Ksenia And Pan Scales
 #include <bits/stdc++.h>
 using namespace std;
 

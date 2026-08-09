@@ -1,5 +1,5 @@
-//https://codeforces.com/contest/227/problem/B
-// Effective Approach
+// url: https://codeforces.com/contest/227/problem/B
+// Title: Effective Approach
 #include <bits/stdc++.h>
 using namespace std;
 

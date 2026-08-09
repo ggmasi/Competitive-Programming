@@ -1,5 +1,5 @@
-//https://codeforces.com/gym/104555/problem/L
-// Lexicograficamente Agradavel
+// url: https://codeforces.com/gym/104555/problem/L
+// Title: Lexicograficamente Agradavel
 #include <bits/stdc++.h>
 using namespace std;
 
