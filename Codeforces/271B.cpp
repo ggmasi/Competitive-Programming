@@ -11,6 +11,7 @@ vector<int> primes(1e5+7, 0);
 void sieve(int n){
     for (int i = 2; i <= n; i++){
         if(primes[i] == 0){
+            primes[i] = i;
             if(1LL * i * i <= n){
                 for (int j = i*i; j <=n; j+= i){
                     primes[j] = -1;
@@ -23,7 +24,7 @@ void sieve(int n){
 }
 
 int find(int v){
-    if(primes[v] == 0) return v;
+    if(primes[v] >= 0) return primes[v];
     return primes[v] = find(v+1);
 }
 
