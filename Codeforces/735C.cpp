@@ -6,8 +6,6 @@ using namespace std;
 #define ll long long
 #define pii pair<int, int>
 
-
-
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
@@ -23,10 +21,6 @@ int main() {
         v.push_back(v[idx-1]+v[idx-2]);
         idx++;
     }
-
-    // for(auto x : v){
-    //     cout << x << " ";
-    // }
 
     int res = upper_bound(v.begin(), v.end(), n) - v.begin()-1;
 
