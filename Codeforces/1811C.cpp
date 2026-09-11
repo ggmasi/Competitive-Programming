@@ -18,22 +18,11 @@ int main() {
         vector<int> res;
         cin >> b[0];
         res.push_back(b[0]);
-        bool flag = false;
         for (int i = 1; i <= n-2; i++){
             cin >> b[i];
-            if(b[i] == res.back() && flag){
-                res.push_back(b[i]);
-                continue;
-            }
-
-            if(b[i] > res.back() && !flag){
-                res.push_back(0);
-                flag = true;
-            }
-            res.push_back(b[i]);
+            res.push_back(min(b[i], b[i-1]));
         }
-
-        if(!flag) res.push_back(0);
+        res.push_back(b.back());
 
         for (auto x : res){
             cout << x << " ";
