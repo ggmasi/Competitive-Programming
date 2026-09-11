@@ -16,6 +16,7 @@ int main() {
     vector<ll> dp(n+1);
     vector<ll> pref(n+1);
     v[0] = dp[0] = pref[0] = 0;
+    
     ll ans = 0;
     for (int i = 1; i <= n; i++){
         cin >> v[i];
@@ -23,6 +24,7 @@ int main() {
         ans = max(ans, dp[i]);
         pref[i] = pref[i-1]+v[i];
     }
+
     ll x = 2;
     while((x*(x+1))/2 <= n){
         ll inicio = ((x*(x+1))/2);
