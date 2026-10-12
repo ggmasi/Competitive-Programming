@@ -13,14 +13,14 @@ int main() {
     int n; cin >> n;
     ll g; cin >> g;
     vector<ll> v(n+1);
-    vector<vector<ll>> dp(450, vector<ll>(n+1, 0));
+    vector<vector<ll>> dp(450, vector<ll>(n+1, -1e18));
     vector<ll> pref(n+1);
     v[0] = pref[0] = 0;
 
     ll ans = 0;
     for (int i = 1; i <= n; i++){
         cin >> v[i];
-        dp[1][i] = g-v[i];
+        dp[1][i] = max(g-v[i], dp[1][i-1]);
         ans = max(ans, dp[1][i]);
         pref[i] = pref[i-1]+v[i];
     }
@@ -28,13 +28,22 @@ int main() {
     ll x = 2;
     while((x*(x+1))/2 <= n){
         ll inicio = ((x*(x+1))/2);
+       
         for (int i = inicio; i <= n; i++){
-            dp[x][i] = max(max(dp[x-1][i], dp[x][i-1]), dp[x-1][i-x]+g-(pref[i]-pref[i-x]));
+            dp[x][i] = max(dp[x][i-1], dp[x-1][i-x]+g-(pref[i]-pref[i-x]));
             ans = max(ans, dp[x][i]);
         }
+
+        // for (int i = 0; i <= n; i++){
+        //     cout << dp[x][i] << " ";
+        // }
+        // cout << endl;
+
+
         x++;
     }
     
+    // ans = max(ans, dp[x][n]);
 
     cout << ans << "\n";
 
